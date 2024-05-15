@@ -73,6 +73,8 @@ class OffboardControl(Node):
                             self.vehicle_local_position.z,
                             self.vehicle_local_position.heading)
             self.update_trajectory()
+        else:
+            print("\rWaiting for the Drone to switch to offboard node", end = " ")
 
     def vehicle_local_position_callback(self, vehicle_local_position):
         """Callback function for vehicle_local_position topic subscriber."""
