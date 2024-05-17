@@ -726,9 +726,9 @@ def compute_drone_action_while_tracking(mean_point, cfg, vehicle):
     y = 0
     z = 2
 
+    KX = 1.75
+    KY = 0.5
     KZ = 0.75
-    KX = 1.5
-    KY = 1.5
     yaw_K = 0.15
     
     heading = 0
@@ -867,7 +867,7 @@ def track_object_with_aot(tracker, pred_mask, frame,  video, cfg, vehicle, track
 
             # Compute the drone action
             compute_drone_action_while_tracking(mean_point, cfg, vehicle)
-           
+        
             ##############################################
             vis_masks = multiclass_vis(pred_mask, frame, np.max(pred_mask) + 1, np_used = True)
             plot_and_save_if_neded(cfg, frame, "Stream_tracking",frame_idx)
