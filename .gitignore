@@ -48,3 +48,4 @@ log/
 *.ckpt.meta
 *.ckpt.index
 *.pth
+*.pth.1
