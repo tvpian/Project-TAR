@@ -1,0 +1,4 @@
+BACKGROUND
+Bus
+Car
+Truck
