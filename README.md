@@ -24,8 +24,6 @@ conda install --file setup_files/project_tar_v3.yaml
 
 ## Running the TAR system on a VOXL2 based drone using ROS2
 
-# TAR System Setup with VOXL2 Drone
-
 This guide will walk you through the steps to set up and run the TAR (Target Acquisition and Recognition) system using a VOXL2 drone.
 
 ## Prerequisites
@@ -97,8 +95,10 @@ Ensure you have the following software installed on your system:
 Follow these steps in the specified order to start the simulation:
 
 1. **Start Gazebo**
+    Note: You have to ensure PX4-Autopilot related files in the rapter_ws directory.
    ```bash
-   ./run_baylands_total-1.sh
+   cd rapter_ws/PX4-Autopilot
+   make px4_sitl_default gazebo
    ```
 
 2. **Start the Microxe Agent**
@@ -113,27 +113,28 @@ Follow these steps in the specified order to start the simulation:
 
 4. **Start the RTSP Server**
    ```bash
-   python rtsp_server.py
+   python test_ws/rtsp_server.py
    ```
 
 5. **Start the Camera Subscriber and RTSP Server Proxy**
    ```bash
-   python uav_camera_to_crutch_proxy.py
+   python test_ws/uav_camera_to_crutch_proxy.py
    ```
 
-6. **Set the Desired Object in Motion**
+6. **Set the Desired Object in Motion**(Modify the set_sinusoidal_motion.sh file to set the desired object in motion)
    ```bash
    ./set_sinusoidal_motion.sh
    ```
 
 7. **Start the Vision Node**
    ```bash
+   cd FollowAnything/
    python follow_anything_ros.py --desired_height 240 --desired_width 320 --path_to_video rtsp://127.0.0.1:1234/video_stream --save_images_to outputs/ --detect box --redetect_by box --tracker aot --plot_visualizations
    ```
 
 8. **Start the Offboard Controller**
    ```bash
-   python input_vel_fly.py
+   python test_ws/input_vel_fly.py
    ```
 
 ## Additional Notes
