@@ -145,6 +145,10 @@ Follow these steps in the specified order to start the simulation:
 
 By following these steps, you should be able to set up and run the Baylands Total-1 simulation environment successfully.
 
+## Results
+For the video demonstration of the project, please refer to the following [link](https://drive.google.com/drive/u/1/folders/1gO0R1qUqjNkcfFNRyeN-Uf0ZnvGIiMT8)
+For the report of the project, please refer to the report available in the repository as [Project_Report.pdf](report.pdf)
+
 
 ## License
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
