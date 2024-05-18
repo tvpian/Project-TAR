@@ -1,0 +1,34 @@
+/apriltag:
+  ros__parameters:
+    detector:
+      blur: 0.0
+      debug: false
+      decimate: 2.0
+      refine: true
+      sharpening: 0.25
+      threads: 1
+    family: 36h11
+    image_transport: raw
+    max_hamming: 0
+    pose_estimation_method: pnp
+    profile: false
+    qos_overrides:
+      /parameter_events:
+        publisher:
+          depth: 1000
+          durability: volatile
+          history: keep_last
+          reliability: reliable
+      /tf:
+        publisher:
+          depth: 100
+          durability: volatile
+          history: keep_last
+          reliability: reliable
+    size: 1.6
+    tag:
+      frames: [test]
+      ids: [0]
+      sizes: [1.6]
+    use_sim_time: false
+
