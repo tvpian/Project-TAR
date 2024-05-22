@@ -1,5 +1,8 @@
 # Track_Anything_Rapter(TAR)
 
+## Description
+Track Anything Raptor (TAR) is a ROS2-based aerial vehicle system that detects, segments and tracks objects using multimodal queries (text, images, clicks). TAR leverages pre-trained models (DINO, CLIP, SAM) for pose estimation and employs Visual Servoing for precise tracking, validated against Vicon-based ground truth on a PX4 Autopilot-enabled Voxl2 M500 drone.
+
 ## Dependencies
 Note: The following are the dependencies currently used in the project. The project may work with other versions of the dependencies as well.
 - Cuda 12.2
