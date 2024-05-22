@@ -27,6 +27,11 @@ conda install --file setup_files/project_tar_v3.yaml
 
 ## Running the TAR system on a VOXL2 based drone using ROS2
 
+
+https://github.com/tvpian/Project-TAR/assets/41953267/c45b2294-eaa9-4902-ac12-97a89a4d5038
+
+
+
 This guide will walk you through the steps to set up and run the TAR (Target Acquisition and Recognition) system using a VOXL2 drone.
 
 ## Prerequisites
@@ -76,7 +81,7 @@ The Controller Node is responsible for controlling the drone based on the object
 ## Additional Notes
 
 - Ensure all scripts and commands are executed in the proper environment with necessary permissions.
-- Verify the RTSP server URL and adjust if necessary.
+- Verify the RTSP server URL and adjust it if necessary.
 - Monitor each step for successful execution before proceeding to the next one.
 
 By following these steps, you should be able to set up and run the TAR system successfully using your VOXL2 drone.
@@ -98,7 +103,7 @@ Ensure you have the following software installed on your system:
 Follow these steps in the specified order to start the simulation:
 
 1. **Start Gazebo**
-    Note: You have to ensure PX4-Autopilot related files in the rapter_ws directory.
+    Note: You have to ensure PX4-Autopilot-related files in the rapter_ws directory.
    ```bash
    cd rapter_ws/PX4-Autopilot
    make px4_sitl_default gazebo
