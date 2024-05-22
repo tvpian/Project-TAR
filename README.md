@@ -1,5 +1,8 @@
 # Track_Anything_Rapter(TAR)
 
+## Description
+Track Anything Raptor (TAR) is a ROS2-based aerial vehicle system that detects, segments and tracks objects using multimodal queries (text, images, clicks). TAR leverages pre-trained models (DINO, CLIP, SAM) for pose estimation and employs Visual Servoing for precise tracking, validated against Vicon-based ground truth on a PX4 Autopilot-enabled Voxl2 M500 drone.
+
 ## Dependencies
 Note: The following are the dependencies currently used in the project. The project may work with other versions of the dependencies as well.
 - Cuda 12.2
@@ -23,6 +26,7 @@ conda install --file setup_files/project_tar_v3.yaml
 <!-- Step 2: Setup the FollowAnthing git repository as described in the [FollowAnything](https://github.com/alaamaalouf/FollowAnything) repository. -->
 
 ## Running the TAR system on a VOXL2 based drone using ROS2
+https://github.com/tvpian/Project-TAR/assets/41953267/c45b2294-eaa9-4902-ac12-97a89a4d5038
 
 This guide will walk you through the steps to set up and run the TAR (Target Acquisition and Recognition) system using a VOXL2 drone.
 
@@ -32,7 +36,7 @@ Ensure you have the following software and hardware:
 
 - VOXL2 Drone
 - Ground station with VLC player installed
-- Python 3.x
+- Python 3.10
 - Necessary Python libraries
 
 ## Setup and Execution
@@ -72,13 +76,14 @@ The Controller Node is responsible for controlling the drone based on the object
 
 ## Additional Notes
 
-- Ensure all scripts and commands are executed in the proper environment with necessary permissions.
-- Verify the RTSP server URL and adjust if necessary.
+- Ensure all scripts and commands are executed in the proper environment with the necessary permissions.
+- Verify the RTSP server URL and adjust it if necessary.
 - Monitor each step for successful execution before proceeding to the next one.
 
 By following these steps, you should be able to set up and run the TAR system successfully using your VOXL2 drone.
 
 ## Running the TAR system on Gazebo simulation using ROS2
+https://github.com/tvpian/Project-TAR/assets/41953267/e6b06adf-a33e-4b7f-be39-77a906b7a03e
 
 This guide will walk you through the steps to set up and run the Baylands Total-1 simulation environment.
 
@@ -95,7 +100,7 @@ Ensure you have the following software installed on your system:
 Follow these steps in the specified order to start the simulation:
 
 1. **Start Gazebo**
-    Note: You have to ensure PX4-Autopilot related files in the rapter_ws directory.
+    Note: You have to ensure PX4-Autopilot-related files are in the rapter_ws directory.
    ```bash
    cd rapter_ws/PX4-Autopilot
    make px4_sitl_default gazebo
@@ -140,7 +145,7 @@ Follow these steps in the specified order to start the simulation:
 ## Additional Notes
 
 - Ensure all scripts and commands are executed in the proper environment with necessary permissions.
-- Verify the RTSP server URL and adjust if necessary.
+- Verify the RTSP server URL and adjust it if necessary.
 - Monitor each step for successful execution before proceeding to the next one.
 
 By following these steps, you should be able to set up and run the Baylands Total-1 simulation environment successfully.
