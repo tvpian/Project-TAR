@@ -28,7 +28,7 @@ conda install --file setup_files/project_tar_v3.yaml
 ## Running the TAR system on a VOXL2 based drone using ROS2
 https://github.com/tvpian/Project-TAR/assets/41953267/c45b2294-eaa9-4902-ac12-97a89a4d5038
 
-This guide will walk you through the steps to set up and run the TAR (Target Acquisition and Recognition) system using a VOXL2 drone.
+This guide will walk you through the steps to set up and run the TAR system using a VOXL2 drone.
 
 ## Prerequisites
 
@@ -144,7 +144,7 @@ Follow these steps in the specified order to start the simulation:
 
 ## Additional Notes
 
-- Ensure all scripts and commands are executed in the proper environment with necessary permissions.
+- Ensure all scripts and commands are executed in the proper environment with the necessary permissions.
 - Verify the RTSP server URL and adjust it if necessary.
 - Monitor each step for successful execution before proceeding to the next one.
 
